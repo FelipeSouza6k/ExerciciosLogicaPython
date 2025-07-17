@@ -3,19 +3,19 @@ import datetime
 print("Verificar se funcionário esta apto para aposentadoria")
 
 nomeFuncionario = input("Digite o nome do Funcionário: ")
-
-tempoDeEmpresaFuncionario = int(
-    input("Digite a quantos anos o funcionário esta na empresa: ")
+ 
+ingressoFuncionario = int(
+    input("Digite o ano de ingresso do funcionário na empresa: ")
 )
 
-idadeFuncionario = int(input("Digite a quantos anos o funcionário esta na empresa: "))
+anoNascimentoFuncionario = int(input("Digite o ano de nascimento do funcionário: "))
+ 
+tempoEmpresa = 2025 - ingressoFuncionario
+idadeFuncionario = 2025 - anoNascimentoFuncionario
 
-tempoEmpresa = datetime.datetime.now().year
-tempoEmpresa -= tempoDeEmpresaFuncionario
-
-if (tempoEmpresa > 30 or idadeFuncionario > 65) and (
-    idadeFuncionario > 60 and tempoDeEmpresaFuncionario > 25
-):
-    print(f"Funcionário:{nomeFuncionario}\n Aposentadoria: Apto a aposentar")
+if (tempoEmpresa > 30 or idadeFuncionario > 65) :
+    print(f"Funcionário: {nomeFuncionario}\nAposentadoria: Apto a aposentar")
+elif (idadeFuncionario > 60 and tempoEmpresa > 25):
+    print(f"Funcionario: {nomeFuncionario}\nRequer aposentadoria")
 else:
-    print("Não requer aposentadoria")
+    print(f"Funcionario: {nomeFuncionario}\nNão requer aposentadoria")

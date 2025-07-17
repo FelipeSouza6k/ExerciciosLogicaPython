@@ -9,7 +9,7 @@ while True:
         print ("Valor da da altura inválida")
         
 while True:
-    entradaBase = input("Digite a base")
+    entradaBase = input("Digite a base: ")
     try:
         base = int(entradaBase)
         break

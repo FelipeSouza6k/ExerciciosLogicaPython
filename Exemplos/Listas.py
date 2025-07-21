@@ -11,4 +11,4 @@ while True:
     else:
         nomes.append(nomeNovo)
         nomes.sort()
-        print(f"'{nomeNovo}' adicionado. Lista atual: {nomes}")        
+        print(f"'{nomeNovo}' adicionado. Lista atual em ordem alfabética : {nomes}")        

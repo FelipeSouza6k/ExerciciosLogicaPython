@@ -7,8 +7,8 @@ print(lista1 | lista2) # União entre sets
 
 print(lista1 - lista2) # diferença entre sets
 
-print(lista1 ^ lista2) # Apresenta os   números iguais nas sets
+print(lista1 ^ lista2) # Apresenta os números iguais nas sets
 
-print(lista1 & lista2) #Aprese nta numeros similares entre as sets
+print(lista1 & lista2) #Apresenta numeros similares entre as sets
 
 print(len(lista1)) # Verificar tamanho das sets (quantos valores possui)

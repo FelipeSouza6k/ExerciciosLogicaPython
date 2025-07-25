@@ -4,7 +4,7 @@ funcionarios = set(['João', 'Pedro', 'Marcio','Karina', 'Josefa', 'Linda','Nath
 
 turnoDia= set(['João', 'Pedro','Karina', 'Josefa', 'Linda'])
 
-turnoNoite  = set(['Marcio','Nathaly', 'Luan', 'Felipe'])
+turnoNoite  = set(['Marcio','Nathaly', 'Luan', 'Felipe']) 
 
 temCarro = set(['João', 'Josefa', 'Luan'] )
 

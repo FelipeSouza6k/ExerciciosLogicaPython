@@ -1,5 +1,5 @@
 print("DIGITE UM NÚMERO PARA DESCOBRIR SEU ANTECESSOR")
-while  True:
+while True:
     entrada = input("Digite o valor: ")
     try:
         numero = int(entrada)

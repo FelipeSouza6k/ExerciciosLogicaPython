@@ -14,6 +14,6 @@ print("Cadastro concluído\n")
 
 print("Dados fornecidos:")
 
-for chave, valor in informacoesUsuario.items(): #.items() permite vc tazer a key e o value
+for chave, valor in informacoesUsuario.items(): #.items() permite vc trazer a key e o value
     
     print(f"{chave}: {valor}")

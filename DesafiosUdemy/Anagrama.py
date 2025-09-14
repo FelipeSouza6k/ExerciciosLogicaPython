@@ -1,21 +1,22 @@
-
 class Solution(object):
     def validAnagram(self, s: str, t: str):
-        validationInS = []
-        validationInT = []
-        for char in s:
-            validationInS.append(char)
-        for char in t:
-            validationInT.append(char)
-        validationInS.sort()
-        validationInT.sort()
-        if validationInT == validationInS:
-            return True
-        else:
+        if len(s) != len(t):
             return False
+        
+        contagem_s = {}
+        contagem_t = {}
+
+        for char in s:
+            contagem_s[char] = contagem_s.get(char, 0) + 1
+            
+        for char in t:
+            contagem_t[char] = contagem_t.get(char,0 ) + 1
+
+        return  contagem_s == contagem_t
+
 
 solver = Solution()
 
-resultado = solver.validAnagram("esteira", "esteira")
+resultado = solver.validAnagram("amor", "amot")
 
 print(f"O resultado do teste é: {resultado}")

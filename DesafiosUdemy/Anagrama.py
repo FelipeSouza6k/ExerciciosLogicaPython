@@ -1,5 +1,5 @@
 class Solution(object):
-    def validAnagram(self, s: str, t: str):
+    def validAnagram(self, s: str, t: str) -> bool:
         if len(s) != len(t):
             return False
         
@@ -8,7 +8,7 @@ class Solution(object):
 
         for char in s:
             contagem_s[char] = contagem_s.get(char, 0) + 1
-            
+
         for char in t:
             contagem_t[char] = contagem_t.get(char,0 ) + 1
 

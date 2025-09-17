@@ -4,13 +4,16 @@ class Solution(object):
         teclasQuebradas = set(brokenLetters)
         contadorPalavras = 0
         for palavra in ListaDepalavras:
+
             palavraDigitavel = True
+
             for letra in palavra:
+
                 if letra in teclasQuebradas:
                     palavraDigitavel = False
                     break
 
-            if palavraDigitavel:
+            if palavraDigitavel: #Se for verdadeiro 
                 contadorPalavras += 1
         
         return contadorPalavras
